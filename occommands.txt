@@ -1,1 +1,31 @@
 openshift commands
+# oc login -u=<username> -p=<password> # Login to OpenShift Cluster
+# oc config current-context # Display the Current Context
+# oc get projects # Get Projects
+# oc project <project_name> # Switch to a Project
+# oc get nodes # Get Nodes
+# oc get pods # Get Pods
+# oc get services # Get Services
+# oc get deployments # Get Deployments
+# oc get routes # Get Routes
+# oc describe pod <pod_name> # Describe a Pod
+# oc new-project <project_name> # Create a New Project
+# oc delete project <project_name> # Delete a Project
+# oc apply -f <file.yaml> # Apply a Configuration to a Resource
+# oc delete <resource_type> <resource_name> # Delete a Resource
+# oc expose service <service_name> # Expose a Service as a Route
+# oc scale --replicas=<number> deployment/<deployment_name> # Scale a Deployment
+# oc run <pod_name> --image=<image_name> # Run a New Pod
+# oc logs <pod_name> # Get Logs of a Pod
+# oc logs -f <pod_name> # Follow Logs of a Pod
+# oc exec <pod_name> -- <command> # Execute a Command in a Pod
+# oc new-app <image_name> # Create a New Application
+# oc get events # Get Events
+# oc get pvc # Get Persistent Volume Claims
+# oc get storageclass # Get Storage Classes
+# oc set env deployment/<deployment_name> <env_var>=<value> # Set an Environment Variable in a Deployment
+# oc port-forward <pod_name> <local_port>:<pod_port> # Port-Forward a Pod
+# oc cp <local_path> <pod_name>:/<remote_path> # Copy Files to a Pod
+# oc cp <pod_name>:/<remote_path> <local_path> # Copy Files from a Pod
+# oc create secret generic <secret_name> --from-literal=<key>=<value> # Create a Secret
+# oc describe node <node_name> # Describe a Node
